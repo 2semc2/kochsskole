@@ -31,6 +31,55 @@ window.addEventListener("load",
 
 
             window.addEventListener("scroll",
+
+                function () {
+                    var mySound = document.getElementById("myaudio");
+                
+                
+                    if (elFllVsbl(mySound.parentElement)) // elementFullyVisible  test in seperatefunction
+                    {
+                        if (!(mySound.currentTime > 0)) { // test needed for preventing stuttering
+
+                            mySound.play();
+                        }
+                    } else {
+                        mySound.pause();
+                        mySound.currentTime = 0; // rewind sound
+                    }
+                
+                }
+            )
+
+              function elFllVsbl(el) {
+                return (el.getBoundingClientRect().top >= 0 &&
+                    el.getBoundingClientRect().bottom < window.innerHeight)
+            }
+    
+})
+
+
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+
+
+
+/*   window.addEventListener("scroll",
                 function () {
                 
                 
@@ -60,3 +109,6 @@ window.addEventListener("load",
             }
     
 })
+
+*/
+
