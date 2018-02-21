@@ -1,63 +1,94 @@
 * {
     margin: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
 }
 
 body {
     background-color: white;
 }
 
-.sectioner img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: -1;
+/*LOGO START*/
 
+#logo {
+    height: 15%;
+    width: 15%;
+    z-index: 1;
+    margin-top: 40px;
+    display: inline;
+    margin-left: 85%;
 }
+
+#bundlogo {
+    width: 20%;
+    display: block;
+    margin: auto;
+    height: 20%;
+    padding-bottom: 50px;
+}
+
+/*LOGO SLUT*/
+
+/*SLIDES START*/
 
 .sectioner {
     display: block;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 30px;
+    width: 100vw;
+    height: 100vh;
 }
 
-#logo {
-    height: 10%;
-    width: 10%;
-    z-index: 2;
-    left: 89%;
-    top: 20px;
-    
+#overskrift {
+    font-size: 75px;
+    width: 60%;
+    color: gold;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
 }
+
 
 
 #del1 {
+
     background-image: url(../images/Kochs%20skole.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: blur(0px);
 }
 
 #del2 {
-    background-image: url(../images/IMG_6807.jpeg);
+    background-image: url(../images/blaat_billede.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 #del3 {
-    background-image: url(../images/1.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -4;
 }
 
 #del4 {
-    background-image: url(../images/N_Kochs_Skole_2016-Skaade-Fotografi-DSC_6785_20x30.jpg);
+    background-image: url(../images/roedt_billede.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#del5 {
+    background-image: url(../images/_DSC0043.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,123 +96,232 @@ body {
 }
 
 
-#gone {
-    visibility: hidden;
+#del6 {
+    background-image: url(../images/groent_billede.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#del7 {
+    background-color: darkblue;
 }
 
 
-h2 {
-    position: absolute;
-    margin-top: 50px;
-    z-index: 1;
-    border: yellow medium solid;
-    color: yellow;
-    margin-left: 40px;
-    background-color:
-}
+/*SLIDES SLUT*/
 
-article {
+/* Articles START*/
+
+#div {
     background-color: dimgray;
-    opacity: 1;
     position: absolute;
     display: block;
-    width: 500px;
-    height: 400px;
-    margin-top: 30%;
+    width: 40%;
+    height: auto;
+    margin-top: 25%;
     margin-left: 10%;
     font-family: sans-serif;
     background: rgba(0, 0, 0, 0.7);
 
 }
 
-article h3 {
-    color: limegreen;
-    font-size: 40px;
+#div h3 {
+    color: gold;
+    font-size: 86px;
     opacity: 1;
     margin: 30px;
-
+    font-weight: 100;
+    line-height: 50px;
+    
 
 }
 
 
-article p {
+#div p {
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     margin-left: 30px;
     margin-right: 30px;
+    line-height: 46px;
+    margin-bottom: 20px;
 }
 
 
-.right {
-    margin-left: 60%;
-}
-
-.baggrund {
-    background-color: white;
-}
-
-
-#unik {
-    border: 10px black solid;
-    box-sizing: border-box;
-    width: 90%;
+.slutinfo {
+width: 60%;
+    display: block;
     margin: auto;
-    margin-bottom: 50px;
-    color:
+    position:relative;
+    z-index: 2;
 }
+
+.slutinfo h3 {
+    font-size: 100px;
+    color: gold;
+    text-align: center;
+}
+
+#line2 {
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    padding: 4%;
+}
+
+#line3 {
+    font-size: 30px;
+    text-align: center;
+    color: whitesmoke;
+    padding: 4%;
+    
+}
+
+
+
+
+/*Flex del i artikler*/
+
+#forsideBox {
+    width: 40%;
+    margin: 0% 0 0 10%;
+/*    background-color: dimgray;*/
+   background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    padding-left: 50px;
+    margin-top: 300px;
+    
+}
+
+#forsideBox h3 {
+    font-size: 60px;
+    color: gold;
+    font-weight: 800;
+       
+}
+
+#forsideBox p {
+    color: white;
+    font-size: 20px;
+}
+
+
+.fag {
+    font-size: 32px;
+    font-weight: 500;
+ 
+}
+a {
+    color: gold;
+}
+
+
+/* Articles SLUT*/
+
+/*Tekst bokse START*/
 
 .textbox {
     padding: 8%;
 }
 
+/*Tekst bokse SLUT*/
 
+/* Fade in Funktion START*/
 
-
-
-article {
+div {
     opacity: 0;
 }
 
 
-article.komHid {
-    animation: fadein 1.5s;
+div.komHid {
+    animation: fadein 1.0s;
     animation-fill-mode: forwards;
 }
 
 @keyframes fadein {
     0% {
         opacity: 0;
+        transform: scale(0.8);
     }
     50% {
         opacity: 0;
     }
+    65%
+    {
+        transform: scale(1.02);
+    }
     100% {
         opacity: 1;
+        transform: scale(1)
     }
 }
 
+/* Fade in Funktion START*/
 
+/*Top knap START */
 
-
-#topKnap {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-#topKnap:hover {
-  background-color: #555;
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
 }
 
 
+#myBtn:hover {
+    background-color: #555;
+}
+
+/*Top knap START */
+
+
+#myVideo {
+    position:fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -2;
+    
+}
+
+
+
+.hah {
+    background-color: white;
+}
+
+
+#snackbar {
+font-size: 24px;
+    width: 25%;
+
+       background: rgba(0, 0, 0, 0.7);
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    display: block;
+    position: relative; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+   margin: auto;
+    bottom: -10px; /* 30px from the bottom */
+}
+
+video {
+    display: block;
+    margin: auto;
+    margin-top: 60px,
+}
 

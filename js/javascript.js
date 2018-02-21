@@ -1,3 +1,5 @@
+
+
 window.addEventListener("load",
         function () {
 
@@ -9,7 +11,7 @@ window.addEventListener("load",
                     //spørger om der bliver scrollet og kører funktion
 
 
-                    var nodes = document.getElementsByTagName("article"); //laver en var som påvirker alle article elementer
+                    var nodes = document.getElementsByTagName("div"); //laver en var som påvirker alle div elementer
                     for (var i = 0; i < nodes.length; i++) { //Tjekker alle "articles" og ikke kun 1
                         if (nodes[i].getBoundingClientRect().top >= 0 &&
                             nodes[i].getBoundingClientRect().bottom < window.innerHeight) {
@@ -33,19 +35,23 @@ window.addEventListener("load",
             window.addEventListener("scroll",
 
                 function () {
-                    var mySound = document.getElementById("myaudio");
+                    var mySound = document.getElementsByTagName("audio");
                 
                 
-                    if (elFllVsbl(mySound.parentElement)) // elementFullyVisible  test in seperatefunction
+                for (var o = 0; o < mySound.length; o++) {
+                
+                    if (elFllVsbl(mySound[o].parentElement)) // elementFullyVisible  test in seperatefunction
                     {
-                        if (!(mySound.currentTime > 0)) { // test needed for preventing stuttering
+                    console.log(o);
+                        if (!(mySound[o].currentTime > 0)) { // test needed for preventing stuttering
 
-                            mySound.play();
+                            mySound[o].play();
                         }
                     } else {
-                        mySound.pause();
-                        mySound.currentTime = 0; // rewind sound
+                        mySound[o].pause();
+                        mySound[o].currentTime = 0; // rewind sound
                     }
+                }
                 
                 }
             )
