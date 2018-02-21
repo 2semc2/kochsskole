@@ -38,7 +38,7 @@ body {
 }
 
 #overskrift {
-    font-size: 75px;
+font-size: 75px;
     width: 60%;
     color: gold;
     display: block;
@@ -60,6 +60,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     filter: blur(0px);
+}
+
+#videobaggrund {
+    background-color: darkblue;
 }
 
 #del2 {
@@ -94,7 +98,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 #del6 {
     background-image: url(../images/groent_billede.jpg);
@@ -282,7 +285,7 @@ div.komHid {
     background-color: #555;
 }
 
-/*Top knap START */
+/*Top knap SLUT */
 
 
 #myVideo {
@@ -294,12 +297,6 @@ div.komHid {
     min-height: 100%;
     z-index: -2;
     
-}
-
-
-
-.hah {
-    background-color: white;
 }
 
 
@@ -319,9 +316,5 @@ font-size: 24px;
     bottom: -10px; /* 30px from the bottom */
 }
 
-video {
-    display: block;
-    margin: auto;
-    margin-top: 60px,
-}
+
 
